@@ -1,9 +1,13 @@
 import React from 'react';
+import 'react-animated-css';
+import Title from '../Components/title';
 
 const Home = () =>
 {
     return(
-        <div>HERE</div>
+        <>
+            <Title/>
+        </>
     )
 }
 

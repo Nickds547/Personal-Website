@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import MyHeader from './Components/header';
 import {Layout} from 'antd';
 import 'antd/dist/antd.css';
+import './App.css';
 
 const {Header, Content} = Layout
 
@@ -14,7 +15,7 @@ function App() {
       <Layout className="layout">
           <Header><MyHeader/></Header>
           <Layout>
-        <Content>
+            <Content style={{background: "linear-gradient(to bottom right, #40a9ff, #91d5ff)"}}>
           <Switch>
             <Route path="/"><Home/></Route>
           </Switch>
@@ -22,7 +23,7 @@ function App() {
         </Layout>
       </Layout>
     </Router>
-   </>
+    </>
   );
 }
 
