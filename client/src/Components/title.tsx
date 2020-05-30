@@ -9,12 +9,15 @@ const Title = () =>
     return(
         <Wrapper>
             <MyTitle>Nicholas Salter | Computer Scientist</MyTitle>
-                <Image>
+                <Image >
+                    <a href="https://www.linkedin.com/in/nicholas-salter/" target="_blank" rel="noopener noreferrer">
                     <img 
                         className={"animate__animated animate__fadeInLeft animate__slow"}
                         style={{width: "100%", height: "100%"}} 
                         src={headshot}
+                        alt="Professional Profile"
                         />
+                    </a>
                 </Image>
             <Content className={"animate__animated animate__fadeInDown animate__slow"}>
                 Hello! My name is Nicholas Salter and I am a recent graduate from the University of Louisiana
