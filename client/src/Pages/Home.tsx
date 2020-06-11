@@ -3,6 +3,7 @@ import 'react-animated-css';
 import Title from '../Components/title';
 import Experience from '../Components/experience';
 import Education from '../Components/education'
+import Skills from '../Components/skills';
 
 const Home = () =>
 {
@@ -11,6 +12,7 @@ const Home = () =>
             <Title/>
             <Experience/>
             <Education/>
+            <Skills/>
         </>
     )
 }

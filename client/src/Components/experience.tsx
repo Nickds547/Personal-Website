@@ -5,10 +5,10 @@ import { PieChart } from 'react-minimal-pie-chart';
 import {MyContent, Wrapper, Description, Div, Labels, Box, KeyText, KeyTitle, myBackground, Li} from '../Styles/ExperiencePage';
 import 'react-animated-css';
 
-const consultingColor = '#E38627';
-const ecommerceColor = '#C13C37';
+const consultingColor = '#DAF7A6';
+const ecommerceColor = '#FFC300';
 const digitalColor = '#6A2135';
-const customAppColor = '#FF5733';
+const customAppColor = '#980090 ';
 
 
 const chartData =  [{ title: 'Consulting', value: 32, color: consultingColor },
@@ -55,13 +55,13 @@ const Experience = () =>{
             <Labels>
                 <KeyTitle>Key:</KeyTitle>
                 <dl style={{ width: "100%", float: "left"}}>
-                    <Box style={{background: "#E38627"}}></Box> 
+                    <Box style={{background: consultingColor}}></Box> 
                     <KeyText >Consulting</KeyText>
-                    <Box style={{background: "#C13C37"}}></Box> 
+                    <Box style={{background: ecommerceColor}}></Box> 
                     <KeyText>E-commerce Websites</KeyText>
-                    <Box style={{background: "#6A2135" }}></Box> 
+                    <Box style={{background: digitalColor }}></Box> 
                     <KeyText >Digital Marketing</KeyText>
-                    <Box style={{background: "#FF5733" }}></Box> 
+                    <Box style={{background: customAppColor }}></Box> 
                     <KeyText>Custom App Devlopment</KeyText>
                 </dl>
 
