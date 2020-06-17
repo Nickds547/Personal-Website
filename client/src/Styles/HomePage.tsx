@@ -19,7 +19,7 @@ export const MyTitle = styled.div`
     grid-row: 1 / span 1;
     place-self: center;
     font-weight: bolder;
-    font-size: 22pt;
+    font-size: 24pt;
     text-decoration: underline;
 `;
 

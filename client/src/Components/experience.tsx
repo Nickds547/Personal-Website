@@ -18,7 +18,7 @@ const chartData =  [{ title: 'Consulting', value: 32, color: consultingColor },
 
 const Experience = () =>{
     return (
-        <Wrapper style={{backgroundImage: myBackground, backgroundSize: "cover", paddingBottom: "10vh"}}>
+        <Wrapper style={{backgroundImage: myBackground, backgroundSize: "cover", paddingBottom: "1vh"}}>
             <MyTitle>Work Experience</MyTitle>
             <MyContent>
                 <Div>Types of Projects Completed</Div>

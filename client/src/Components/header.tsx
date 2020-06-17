@@ -22,7 +22,7 @@ const MyHeader = () => {
                     <Link to='/'>Home</Link>
                 </Menu.Item>
                 <Menu.Item key="projects">
-                    Projects
+                    <Link to='projects'>Projects</Link>
                 </Menu.Item>
             </Menu>
             </Layout>
