@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import {Menu, Layout} from 'antd';
+import {Menu, Layout, Affix} from 'antd';
 
 const {Header, Sider} = Layout;
 
@@ -11,20 +11,22 @@ const MyHeader = () => {
 
     return (
             <Layout>
-            <Menu 
-                defaultSelectedKeys={[selected]} 
-                onClick={ e =>setSelected(e.key)} 
-                mode="horizontal"
-                theme="dark"
-                
-                >
-                <Menu.Item  key="home">
-                    <Link to='/'>Home</Link>
-                </Menu.Item>
-                <Menu.Item key="projects">
-                    <Link to='projects'>Projects</Link>
-                </Menu.Item>
-            </Menu>
+                <Affix offsetTop={0}>
+                    <Menu 
+                        defaultSelectedKeys={[selected]} 
+                        onClick={ e =>setSelected(e.key)} 
+                        mode="horizontal"
+                        theme="dark"
+                        
+                        >
+                        <Menu.Item  key="home">
+                            <Link to='/'>Home</Link>
+                        </Menu.Item>
+                        <Menu.Item key="projects">
+                            <Link to='projects'>Projects</Link>
+                        </Menu.Item>
+                    </Menu>
+                </Affix>
             </Layout>
     )
 }
