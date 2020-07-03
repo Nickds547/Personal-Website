@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import calendar from '../Assets/SoccerAppPictures/calendar.svg';
 import users from '../Assets/SoccerAppPictures/users.svg';
 import gm from '../Assets/SoccerAppPictures/gameManager.svg';
+import gf from '../Assets/SoccerAppPictures/gameForm.svg';
 import {Button} from 'antd';
 import {MyTitle} from '../Styles/HomePage';
 
@@ -69,6 +70,21 @@ const Pic2 = styled.img`
     width: 90%;
 `;
 
+const Title3 = styled.div`
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: end;
+`;
+const Pic3 = styled.img`
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 3;
+    place-self: stretch;
+    justify-self: center;
+    width: 90%;
+`;
+
+
 
 const SoccerApp = ({setProject}: any) =>{
     return(
@@ -100,8 +116,11 @@ const SoccerApp = ({setProject}: any) =>{
 
             <Title2>Game Manager</Title2>
             <Pic2 src={gm}/>
+
+            <Title3>Dynamic Game Form</Title3>
+            <Pic3 src={gf}/>
         </Wrapper>
-        <Button style={{marginLeft: "45%", marginTop: "5%"}} onClick={()=>setProject("home")}>Go Back</Button>
+        <Button style={{marginLeft: "45%", marginTop: "5%", marginBottom: "5%"}} onClick={()=>setProject("home")}>Go Back</Button>
         </>
     )
 }
